@@ -1,0 +1,163 @@
+|MuxDemo3
+F <= Mux16_1:inst.Y
+D => Mux16_1:inst.S1
+C => Mux16_1:inst.S2
+B => Mux16_1:inst.S3
+A => Mux16_1:inst.S4
+
+
+|MuxDemo3|Mux16_1:inst
+Y <= Mux2_1:inst28.Y
+I0 => Mux2_1:inst.I0
+S1 => Mux2_1:inst.S
+S1 => Mux2_1:inst13.S
+S1 => Mux2_1:inst16.S
+S1 => Mux2_1:inst17.S
+S1 => Mux2_1:inst18.S
+S1 => Mux2_1:inst20.S
+S1 => Mux2_1:inst22.S
+S1 => Mux2_1:inst25.S
+I1 => Mux2_1:inst.I1
+S2 => Mux2_1:inst14.S
+S2 => Mux2_1:inst15.S
+S2 => Mux2_1:inst19.S
+S2 => Mux2_1:inst24.S
+I2 => Mux2_1:inst13.I0
+I3 => Mux2_1:inst13.I1
+S3 => Mux2_1:inst27.S
+S3 => Mux2_1:inst26.S
+I4 => Mux2_1:inst16.I0
+I5 => Mux2_1:inst16.I1
+I6 => Mux2_1:inst17.I0
+I7 => Mux2_1:inst17.I1
+S4 => Mux2_1:inst28.S
+I8 => Mux2_1:inst18.I0
+I9 => Mux2_1:inst18.I1
+I10 => Mux2_1:inst20.I0
+I11 => Mux2_1:inst20.I1
+I12 => Mux2_1:inst22.I0
+I14 => Mux2_1:inst25.I0
+I15 => Mux2_1:inst25.I1
+I13 => ~NO_FANOUT~
+
+
+|MuxDemo3|Mux16_1:inst|Mux2_1:inst28
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|MuxDemo3|Mux16_1:inst|Mux2_1:inst27
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|MuxDemo3|Mux16_1:inst|Mux2_1:inst14
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|MuxDemo3|Mux16_1:inst|Mux2_1:inst
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|MuxDemo3|Mux16_1:inst|Mux2_1:inst13
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|MuxDemo3|Mux16_1:inst|Mux2_1:inst15
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|MuxDemo3|Mux16_1:inst|Mux2_1:inst16
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|MuxDemo3|Mux16_1:inst|Mux2_1:inst17
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|MuxDemo3|Mux16_1:inst|Mux2_1:inst26
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|MuxDemo3|Mux16_1:inst|Mux2_1:inst19
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|MuxDemo3|Mux16_1:inst|Mux2_1:inst18
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|MuxDemo3|Mux16_1:inst|Mux2_1:inst20
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|MuxDemo3|Mux16_1:inst|Mux2_1:inst24
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|MuxDemo3|Mux16_1:inst|Mux2_1:inst22
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+
+|MuxDemo3|Mux16_1:inst|Mux2_1:inst25
+Y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+I1 => inst1.IN1
+I0 => inst.IN0
+
+

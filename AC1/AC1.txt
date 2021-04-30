@@ -1,0 +1,31 @@
+			ARQUITETURA DE COMPUTADORES
+
+	PRINCIPIOS FUNDAMENTAIS 
+
+   Transferencia entre registos internos´
+
+---> registo $0 tem sempre o valor 0x000000 
+
+or Rdst, $0 , Rsrc   ==> Rdst = (0|Rsrc) = Rsrc
+
+move Rdst,Rsrc  = operação "or"
+
+ 
+
+
+
+
+------------||----------------
+
+align 2   ---->>   o endereço inicial do array vai ser a primeira posição múltipla de 4 
+
+
+-----------------||----------------
+
+>>> Todas as operações que envolvem ponteiros são unsigned!!
+
+
+------------||-------
+GUIAO 6 :	
+»»»»     *p2 ++ = *p1 
+     <=> *p2 = *p1  ^ p2++ 

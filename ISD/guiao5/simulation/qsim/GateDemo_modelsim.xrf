@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/User/Desktop/ISD/guiao5/GateDemo.bdf
+source_file = 1, C:/Users/User/Desktop/ISD/guiao5/GateDemo.vwf
+source_file = 1, C:/Users/User/Desktop/ISD/guiao5/db/GateDemo.cbx.xml
+design_name = GateDemo
+instance = comp, \outPort~output , outPort~output, GateDemo, 1
+instance = comp, \outPort1~output , outPort1~output, GateDemo, 1
+instance = comp, \inPort0~input , inPort0~input, GateDemo, 1
+instance = comp, \inPort1~input , inPort1~input, GateDemo, 1
+instance = comp, \inPort3~input , inPort3~input, GateDemo, 1
+instance = comp, \inPort2~input , inPort2~input, GateDemo, 1

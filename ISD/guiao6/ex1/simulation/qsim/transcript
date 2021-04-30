@@ -1,0 +1,32 @@
+# do DecoderDemo.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:42:28 on Nov 29,2020
+# vlog -work work DecoderDemo.vo 
+# -- Compiling module EncoderDemo
+# 
+# Top level modules:
+# 	EncoderDemo
+# End time: 20:42:28 on Nov 29,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:42:28 on Nov 29,2020
+# vlog -work work EncoderDemo.vwf.vt 
+# -- Compiling module EncoderDemo_vlg_vec_tst
+# 
+# Top level modules:
+# 	EncoderDemo_vlg_vec_tst
+# End time: 20:42:28 on Nov 29,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.EncoderDemo_vlg_vec_tst 
+# Start time: 20:42:28 on Nov 29,2020
+# Loading work.EncoderDemo_vlg_vec_tst
+# Loading work.EncoderDemo
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# after#25
+# ** Note: $finish    : EncoderDemo.vwf.vt(66)
+#    Time: 1 us  Iteration: 0  Instance: /EncoderDemo_vlg_vec_tst
+# End time: 20:42:29 on Nov 29,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

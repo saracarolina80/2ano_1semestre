@@ -1,0 +1,145 @@
+$comment
+	File created using the following command:
+		vcd file ISDT2Sim.msim.vcd -direction
+$end
+$date
+	Thu Dec 17 10:01:54 2020
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module mux8Demo_vlg_vec_tst $end
+$var reg 1 ! I0 $end
+$var reg 1 " I1 $end
+$var reg 1 # I2 $end
+$var reg 1 $ I3 $end
+$var reg 1 % I4 $end
+$var reg 1 & I5 $end
+$var reg 1 ' I6 $end
+$var reg 1 ( I7 $end
+$var reg 4 ) S [3:0] $end
+$var wire 1 * Y $end
+
+$scope module i1 $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 S[3]~input_o $end
+$var wire 1 2 Y~output_o $end
+$var wire 1 3 I5~input_o $end
+$var wire 1 4 S[0]~input_o $end
+$var wire 1 5 I6~input_o $end
+$var wire 1 6 S[1]~input_o $end
+$var wire 1 7 I4~input_o $end
+$var wire 1 8 inst|inst1|22~0_combout $end
+$var wire 1 9 I7~input_o $end
+$var wire 1 : inst|inst1|22~1_combout $end
+$var wire 1 ; I2~input_o $end
+$var wire 1 < I1~input_o $end
+$var wire 1 = I0~input_o $end
+$var wire 1 > inst|inst1|22~2_combout $end
+$var wire 1 ? I3~input_o $end
+$var wire 1 @ inst|inst1|22~3_combout $end
+$var wire 1 A S[2]~input_o $end
+$var wire 1 B inst|inst1|22~4_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+b1111 )
+0*
+0+
+1,
+x-
+1.
+1/
+10
+11
+02
+03
+14
+05
+16
+07
+18
+09
+0:
+0;
+0<
+0=
+1>
+0?
+0@
+1A
+0B
+$end
+#20000
+1!
+1=
+#60000
+1(
+19
+1:
+1B
+12
+1*
+#160000
+1$
+1%
+1?
+17
+1@
+#200000
+1"
+1<
+#300000
+0!
+0=
+#360000
+1#
+1'
+1;
+15
+#400000
+0(
+09
+0:
+0B
+02
+0*
+#440000
+0%
+07
+#500000
+1&
+0"
+13
+0<
+#640000
+0$
+0#
+0?
+0;
+0@
+#940000
+0'
+0&
+05
+03
+#1000000

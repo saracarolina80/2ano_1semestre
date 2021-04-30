@@ -1,0 +1,19 @@
+LÓGICA BITWISE
+
+	AND: &
+		0 & x = 0
+		1 & x = 0
+	OR:  |
+		0 | x = x
+		1 | x = 1
+	XOR: ^
+		0 ^ x = x
+		1 ^ x = ~x
+
+OPERADORES DE DESLOCAMENTO
+
+	SHIFT LEFT: <<		(INSTRUÇÃO: sll Rdst, Rsrc, k )
+	
+	SHIFT RIGHT: >>		LÓGICO: VARIÁVEL É DO TIPO UNSIGNED (INSTRUÇÃO: srl, Rdst, Rsrc, k)
+				ARITMÉTICO: A VARIÁVEL É DO TIPO SIGNED (INSTRUÇÃO: sra, Rdst, Rsrc, k)
+

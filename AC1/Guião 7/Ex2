@@ -1,0 +1,24 @@
+	.data
+	.text
+	.globl main
+
+# MAPA DE REGISTOS:
+
+
+exchange:			# void exchange(char *c1, char *c2)
+				# {
+	
+
+	lb 	$t1,0($a0)	#	char aux1 = *c1;
+	lb	$t2,0($a1)	# 	aux2 = *c2;
+	sb	$t2,0($a0)	#	*c1 = aux2
+	sb	$t1,0($a1)	#	*c2 = aux1; 
+
+	jr $ra			# }
+
+strrev:				# char *strrev(char *str)
+				# {
+	
+	
+
+

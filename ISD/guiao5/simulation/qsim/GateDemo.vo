@@ -1,0 +1,162 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition"
+
+// DATE "11/15/2020 20:41:02"
+
+// 
+// Device: Altera EP4CE6E22C6 Package TQFP144
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module GateDemo (
+	outPort,
+	inPort0,
+	inPort1,
+	outPort1,
+	inPort3,
+	inPort2);
+output 	outPort;
+input 	inPort0;
+input 	inPort1;
+output 	outPort1;
+input 	inPort3;
+input 	inPort2;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \outPort~output_o ;
+wire \outPort1~output_o ;
+wire \inPort0~input_o ;
+wire \inPort1~input_o ;
+wire \AND2_1~combout ;
+wire \inPort3~input_o ;
+wire \inPort2~input_o ;
+wire \NAND2_1~combout ;
+
+
+cycloneive_io_obuf \outPort~output (
+	.i(\AND2_1~combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\outPort~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \outPort~output .bus_hold = "false";
+defparam \outPort~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \outPort1~output (
+	.i(!\NAND2_1~combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\outPort1~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \outPort1~output .bus_hold = "false";
+defparam \outPort1~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_ibuf \inPort0~input (
+	.i(inPort0),
+	.ibar(gnd),
+	.o(\inPort0~input_o ));
+// synopsys translate_off
+defparam \inPort0~input .bus_hold = "false";
+defparam \inPort0~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \inPort1~input (
+	.i(inPort1),
+	.ibar(gnd),
+	.o(\inPort1~input_o ));
+// synopsys translate_off
+defparam \inPort1~input .bus_hold = "false";
+defparam \inPort1~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_lcell_comb AND2_1(
+// Equation(s):
+// \AND2_1~combout  = (\inPort0~input_o  & \inPort1~input_o )
+
+	.dataa(\inPort0~input_o ),
+	.datab(\inPort1~input_o ),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\AND2_1~combout ),
+	.cout());
+// synopsys translate_off
+defparam AND2_1.lut_mask = 16'h8888;
+defparam AND2_1.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_io_ibuf \inPort3~input (
+	.i(inPort3),
+	.ibar(gnd),
+	.o(\inPort3~input_o ));
+// synopsys translate_off
+defparam \inPort3~input .bus_hold = "false";
+defparam \inPort3~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_io_ibuf \inPort2~input (
+	.i(inPort2),
+	.ibar(gnd),
+	.o(\inPort2~input_o ));
+// synopsys translate_off
+defparam \inPort2~input .bus_hold = "false";
+defparam \inPort2~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_lcell_comb NAND2_1(
+// Equation(s):
+// \NAND2_1~combout  = (\inPort3~input_o  & \inPort2~input_o )
+
+	.dataa(\inPort3~input_o ),
+	.datab(\inPort2~input_o ),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\NAND2_1~combout ),
+	.cout());
+// synopsys translate_off
+defparam NAND2_1.lut_mask = 16'h8888;
+defparam NAND2_1.sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign outPort = \outPort~output_o ;
+
+assign outPort1 = \outPort1~output_o ;
+
+endmodule

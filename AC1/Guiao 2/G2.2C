@@ -1,0 +1,11 @@
+	.data
+	.text
+ 	.globl main
+
+  main: ori $t0, $0, 5  #armazenar a variavel bin em t0
+   
+        srl $t2, $t0 ,1   # shift right logical com Imm = 1   (armazena resultado em t2)
+        
+        xor $t1, $t0, $t2  #XOR entre t0 e t2 , armazenando em t1 (gray)
+ 	
+ 	jr $ra 

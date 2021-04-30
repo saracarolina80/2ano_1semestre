@@ -1,0 +1,163 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/User/Desktop/ISD/guiao7/simulation/qsim
+vhard_block
+!s110 1606924197
+!i10b 1
+!s100 aGGaXF9Z5nE6o8`Z`T^Yg0
+ID3Ce98G=R:MX6ko6JlcM<1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1606924195
+Z2 8MuxDemo.vo
+Z3 FMuxDemo.vo
+L0 149
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1606924197.000000
+Z5 !s107 MuxDemo.vo|
+Z6 !s90 -work|work|MuxDemo.vo|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+vMux8_1
+Z9 !s110 1606920375
+!i10b 1
+!s100 D[1khL[kM4REGIWomOiQD3
+I<0D>PRNmYChG4?kJDLhhB0
+R1
+R0
+w1606920371
+R2
+R3
+Z10 L0 31
+R4
+r1
+!s85 0
+31
+Z11 !s108 1606920375.000000
+R5
+R6
+!i113 1
+R7
+R8
+n@mux8_1
+vMux8_1_vlg_vec_tst
+R9
+!i10b 1
+!s100 8c2MQ8lL9SP[N_D[akgTI2
+I6kQG00_J]5Xg3U1Idnn6S0
+R1
+R0
+w1606920369
+Z12 8MuxDemo.vwf.vt
+Z13 FMuxDemo.vwf.vt
+Z14 L0 29
+R4
+r1
+!s85 0
+31
+R11
+Z15 !s107 MuxDemo.vwf.vt|
+Z16 !s90 -work|work|MuxDemo.vwf.vt|
+!i113 1
+R7
+R8
+n@mux8_1_vlg_vec_tst
+vMuxDemo
+!s110 1606925908
+!i10b 1
+!s100 J[>NWRfNk^j79J]I;?NF]3
+ITKbN>LVM^GANLFXAga46=3
+R1
+R0
+w1606925905
+R2
+R3
+R10
+R4
+r1
+!s85 0
+31
+!s108 1606925908.000000
+R5
+R6
+!i113 1
+R7
+R8
+n@mux@demo
+vMuxDemo3
+!s110 1606926526
+!i10b 1
+!s100 M[Th1e03T<9X1Djn>KS4n0
+I_`2ejYUYVhIFhdoRgHo2n2
+R1
+R0
+w1606926525
+R2
+R3
+R10
+R4
+r1
+!s85 0
+31
+!s108 1606926526.000000
+R5
+R6
+!i113 1
+R7
+R8
+n@mux@demo3
+vMuxDemo3_vlg_vec_tst
+!s110 1606926527
+!i10b 1
+!s100 D0fMe4=G3bi7QL4K8?=A_0
+IfeSNiG1X8baCASlXn@kFh1
+R1
+R0
+w1606926523
+8MuxDemo3.vwf.vt
+FMuxDemo3.vwf.vt
+R14
+R4
+r1
+!s85 0
+31
+!s108 1606926527.000000
+!s107 MuxDemo3.vwf.vt|
+!s90 -work|work|MuxDemo3.vwf.vt|
+!i113 1
+R7
+R8
+n@mux@demo3_vlg_vec_tst
+vMuxDemo_vlg_vec_tst
+!s110 1606925909
+!i10b 1
+!s100 =0flkW7^c9TF6SSJ^OeIJ1
+IJg`e17PGD?UifzgSb3X0E0
+R1
+R0
+w1606925904
+R12
+R13
+R14
+R4
+r1
+!s85 0
+31
+!s108 1606925909.000000
+R15
+R16
+!i113 1
+R7
+R8
+n@mux@demo_vlg_vec_tst

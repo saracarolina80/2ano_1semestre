@@ -1,0 +1,44 @@
+|EncoderDemo
+OS <= PEnc8_3:inst.OS
+EOL => PEnc8_3:inst.EOL
+X0 => PEnc8_3:inst.X0
+X1 => PEnc8_3:inst.X1
+X2 => PEnc8_3:inst.X2
+X3 => PEnc8_3:inst.X3
+X4 => PEnc8_3:inst.X4
+X5 => PEnc8_3:inst.X5
+X6 => PEnc8_3:inst.X6
+X7 => PEnc8_3:inst.X7
+Y0 <= PEnc8_3:inst.Y0
+Y1 <= PEnc8_3:inst.Y1
+Y2 <= PEnc8_3:inst.Y2
+
+
+|EncoderDemo|PEnc8_3:inst
+OS <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+X7 => inst9.IN0
+X7 => inst22.IN2
+X7 => inst17.IN1
+X7 => inst19.IN0
+X5 => inst8.IN0
+X5 => inst21.IN0
+X5 => inst19.IN1
+X6 => inst3.IN0
+X6 => inst17.IN0
+X6 => inst19.IN3
+X4 => inst7.IN0
+X4 => inst19.IN2
+X1 => inst4.IN0
+X1 => inst11.IN0
+X2 => inst5.IN0
+X2 => inst1.IN1
+X0 => inst2.IN0
+X3 => inst6.IN0
+X3 => inst12.IN0
+X3 => inst1.IN0
+Y0 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+EOL => inst.IN0
+Y1 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Y2 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+
+
